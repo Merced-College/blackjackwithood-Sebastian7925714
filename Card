@@ -1,0 +1,43 @@
+package cardGame;
+
+/*OOD group/Array Group 5
+ * Juan S Hernandez-Corona
+ * Eric Almanza
+ * 
+ * 
+ *CPSC-39-12109 
+ */
+
+public class Card {
+	String cardSuit;
+	String cardName;
+	int cardValue;
+	String cardPicture;
+	
+	
+    public Card(){//default constructor for creating an empty card. not needed but makes code easier to read/follow along
+        this.cardSuit = "none";
+        this.cardName = "none";
+        this.cardValue = -1;
+        this.cardPicture = "none";
+        }
+    
+    public Card(String cardSuit, String cardName, int cardValue, String cardPicture){// overload constructor
+        this.cardSuit = cardSuit;
+        this.cardName = cardName;
+        this.cardValue = cardValue;
+        this.cardPicture = cardPicture;
+        }
+    
+    
+    public void printCard() {//print function for information
+    	
+    	System.out.println(cardSuit + " "+ cardName + " " + cardValue);
+    }
+    
+    public int getCardNumber(){//help transfer to primative variables
+    	return this.cardValue;
+        }
+    
+	
+}
